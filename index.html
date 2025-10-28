@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X413 - 突破Web2限制的NFT</title>
+    <title>X413 - Breaking Web2 Limits NFT</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./5.png">
+    <link rel="shortcut icon" type="image/png" href="./5.png">
+    <link rel="apple-touch-icon" href="./5.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./5.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./5.png">
+    <meta name="msapplication-TileImage" content="./5.png">
     
     <style>
         * {
@@ -89,6 +97,16 @@
             font-size: 1.5rem;
             font-weight: bold;
             cursor: pointer;
+        }
+        
+        .logo a:hover {
+            transform: scale(1.1);
+            transition: transform 0.2s ease;
+        }
+        
+        .footer a:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease;
         }
 
         .error-code {
@@ -1073,6 +1091,15 @@
                 <span class="error-code">X413</span>
                 <span class="breaker">NFT</span>
                 <span style="background: linear-gradient(90deg, #667eea, #764ba2); padding: 0.2rem 0.6rem; border-radius: 20px; font-size: 0.7rem; margin-left: 1rem; font-weight: 600;">x402 POWERED</span>
+                <a href="https://element.market/collections/x413-3?search[toggles][0]=ALL" target="_blank" style="margin-left: 1rem; text-decoration: none;">
+                    <img src="./Elementlogo.png" alt="Element Market" style="height: 24px; width: auto; vertical-align: middle;">
+                </a>
+                <a href="https://x.com/BEP20X413" target="_blank" style="margin-left: 1rem; text-decoration: none;">
+                    <img src="./X.png" alt="X (Twitter)" style="height: 24px; width: auto; vertical-align: middle;">
+                </a>
+                <a href="https://github.com/talonmemancing-sys/X413Protocol-" target="_blank" style="margin-left: 1rem; text-decoration: none;">
+                    <img src="./GITHUB.png" alt="GitHub Repository" style="height: 24px; width: auto; vertical-align: middle;">
+                </a>
             </div>
             <button class="connect-btn" id="connectWallet" onclick="connectWallet()">
                 <span>🔗</span>
@@ -1189,8 +1216,22 @@
                     </div>
                     
                     <button class="mint-btn" id="mintBtn" onclick="mintNFT()" disabled>
-                        ⚡ GASLESS MINT - FREE
+                        ⚡ MINT NFT - 0.001 BNB
                     </button>
+                    
+                    <!-- Fee Information -->
+                    <div style="margin-top: 0.5rem; padding: 0.5rem; background: rgba(255, 7, 58, 0.1); border: 1px solid rgba(255, 7, 58, 0.3); border-radius: 8px; font-size: 0.8rem; text-align: center;">
+                        <span style="color: #FF073A; font-weight: bold;">⚠️ Mint Fee: 0.001 BNB</span>
+                        <br>
+                        <span style="color: #ccc;">Each mint requires 0.001 BNB payment</span>
+                    </div>
+                    
+                    <!-- Debug Info -->
+                    <div style="margin-top: 1rem; padding: 0.5rem; background: rgba(0,0,0,0.3); border-radius: 8px; font-size: 0.8rem;">
+                        <div>Contract: <span id="contractStatus">Not initialized</span></div>
+                        <div>Network: <span id="networkStatus">Unknown</span></div>
+                        <div>Account: <span id="accountStatus">Not connected</span></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1306,7 +1347,7 @@
                 
             <div class="celebration-actions">
                 <button class="celebration-btn primary" onclick="closeCelebrationModal()">Mint Another</button>
-                <button class="celebration-btn secondary" onclick="viewOnOpenSea()">View on OpenSea</button>
+                <button class="celebration-btn secondary" onclick="viewOnElement()">View on Element</button>
                 </div>
             </div>
     </div>
@@ -1316,8 +1357,22 @@
         <p style="font-size: 0.9rem; color: #667eea;">
             Powered by x402 Protocol | Enhanced with NFT Technology
         </p>
+        <div style="margin: 1rem 0;">
+            <a href="https://element.market/collections/x413-3?search[toggles][0]=ALL" target="_blank" style="text-decoration: none; color: #00D4FF; margin-right: 1rem;">
+                <img src="./Elementlogo.png" alt="Element Market" style="height: 20px; width: auto; vertical-align: middle; margin-right: 0.5rem;">
+                View on Element Market
+            </a>
+            <a href="https://x.com/BEP20X413" target="_blank" style="text-decoration: none; color: #00D4FF; margin-right: 1rem;">
+                <img src="./X.png" alt="X (Twitter)" style="height: 20px; width: auto; vertical-align: middle; margin-right: 0.5rem;">
+                Follow on X
+            </a>
+            <a href="https://github.com/talonmemancing-sys/X413Protocol-" target="_blank" style="text-decoration: none; color: #00D4FF; margin-right: 1rem;">
+                <img src="./GITHUB.png" alt="GitHub Repository" style="height: 20px; width: auto; vertical-align: middle; margin-right: 0.5rem;">
+                View Source Code
+            </a>
+        </div>
         <p style="font-size: 0.8rem; color: #666; margin-top: 1rem;">
-            x402 + NFT = Breaking the 413 Barrier Forever
+            Contract: 0xD92eDcb7768FE5232Ffa6DBa6B098Ad3A9720B78 | Mint Fee: 0.001 BNB
         </p>
     </footer>
 
@@ -1329,14 +1384,82 @@
 
     <script src="https://cdn.jsdelivr.net/npm/web3@1.8.0/dist/web3.min.js"></script>
     <script>
-        // Contract Configuration - 部署后更新这些地址
-        const CONTRACT_ADDRESS = '0x0000000000000000000000000000000000000000'; // 替换为您的合约地址
-        const OPENSEA_COLLECTION = 'https://opensea.io/collection/x413'; // 替换为您的OpenSea集合链接
+        // Contract Configuration - Updated with new deployed contract
+        const CONTRACT_ADDRESS = '0xD92eDcb7768FE5232Ffa6DBa6B098Ad3A9720B78';
+        const OPENSEA_COLLECTION = 'https://element.market/collections/x413-3?search[toggles][0]=ALL';
         
-        // 网络配置
+        // Contract ABI - Essential functions for minting
+        const CONTRACT_ABI = [
+            {
+                "inputs": [],
+                "name": "mint",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "totalSupply",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "address", "name": "owner", "type": "address"}],
+                "name": "balanceOf",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "uint256", "name": "tokenId", "type": "uint256"}],
+                "name": "tokenURI",
+                "outputs": [{"internalType": "string", "name": "", "type": "string"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "uint256", "name": "tokenId", "type": "uint256"}],
+                "name": "getTokenDetails",
+                "outputs": [
+                    {"internalType": "uint8", "name": "nftType", "type": "uint8"},
+                    {"internalType": "string", "name": "typeName", "type": "string"},
+                    {"internalType": "string", "name": "rarity", "type": "string"},
+                    {"internalType": "string", "name": "imageUrl", "type": "string"}
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [],
+                "name": "getMintStats",
+                "outputs": [
+                    {"internalType": "uint256", "name": "currentSupply", "type": "uint256"},
+                    {"internalType": "uint256", "name": "maxSupply", "type": "uint256"},
+                    {"internalType": "uint256", "name": "userBalance", "type": "uint256"},
+                    {"internalType": "uint256", "name": "maxPerWallet", "type": "uint256"}
+                ],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "anonymous": false,
+                "inputs": [
+                    {"indexed": true, "internalType": "address", "name": "to", "type": "address"},
+                    {"indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256"},
+                    {"indexed": false, "internalType": "uint8", "name": "nftType", "type": "uint8"}
+                ],
+                "name": "NFTMinted",
+                "type": "event"
+            }
+        ];
+        
+        // Network Configuration
         const NETWORK_CONFIG = {
             BSC_MAINNET: 56,
-            BSC_TESTNET: 97
+            BSC_TESTNET: 97,
+            ETHEREUM_MAINNET: 1,
+            POLYGON_MAINNET: 137
         };
         
         // NFT designs with local images
@@ -1380,13 +1503,62 @@
 
         let web3;
         let userAccount;
+        let contract;
         let currentDesign = NFT_DESIGNS[0]; // Default display first NFT
         let userNFTCount = 0;
 
         // Initialize on load
         window.addEventListener('load', () => {
+            console.log('Page loaded, initializing...');
+            
             // Set default display
             updateNFTDisplay(currentDesign);
+            
+            // Check if wallet is already connected
+            if (typeof window.ethereum !== 'undefined') {
+                window.ethereum.request({ method: 'eth_accounts' })
+                    .then(async accounts => {
+                        if (accounts.length > 0) {
+                            console.log('Wallet already connected:', accounts[0]);
+                            // Auto-connect if wallet is already connected
+                            await connectWallet();
+                        }
+                    })
+                    .catch(error => {
+                        console.log('No wallet connected:', error);
+                    });
+            }
+            
+            // Listen for account changes
+            if (typeof window.ethereum !== 'undefined') {
+                window.ethereum.on('accountsChanged', (accounts) => {
+                    if (accounts.length === 0) {
+                        // User disconnected
+                        userAccount = null;
+                        contract = null;
+                        document.getElementById('connectWallet').innerHTML = '<span>🔗</span><span>Connect Wallet</span>';
+                        document.getElementById('mintBtn').disabled = true;
+                        showToast('Wallet disconnected', 'info');
+                    } else {
+                        // User switched accounts
+                        userAccount = accounts[0];
+                        // Reconnect with new account
+                        location.reload();
+                    }
+                });
+                
+                window.ethereum.on('chainChanged', (chainId) => {
+                    console.log('Chain changed to:', chainId);
+                    // Reload page to update network
+                    window.location.reload();
+                });
+            }
+            
+            console.log('Initialization complete');
+            
+            // Make sure connectWallet is available globally
+            window.connectWallet = connectWallet;
+            console.log('connectWallet function registered globally');
         });
 
         function updateNFTDisplay(design) {
@@ -1404,34 +1576,114 @@
             rarityBadge.style.background = `linear-gradient(135deg, ${design.color}22, ${design.color}55)`;
         }
 
+        // Test function to verify mapping
+        function testNFTMapping() {
+            console.log('Testing NFT mapping...');
+            for (let i = 0; i < 5; i++) {
+                const design = getDesignByContractType(i);
+                console.log(`Type ${i}:`, design.name, design.rarity, design.color);
+            }
+        }
+        
+        // Call test function on load
+        window.addEventListener('load', () => {
+            setTimeout(testNFTMapping, 1000);
+        });
+
+        // Map contract NFT type to design
+        function getDesignByContractType(contractType) {
+            console.log('getDesignByContractType called with:', contractType, 'Type:', typeof contractType);
+            
+            // Contract types: 0=GENESIS_BREAKER, 1=CYBER_OVERFLOW, 2=PAYLOAD_PHOENIX, 3=INFINITE_BUFFER, 4=WEB3_LIBERATION
+            const typeMapping = {
+                0: NFT_DESIGNS[0], // Genesis Breaker (1.png) - Rare - Green
+                1: NFT_DESIGNS[1], // Cyber Overflow (2.png) - Ultra Rare - Blue
+                2: NFT_DESIGNS[2], // Payload Phoenix (3.png) - Epic - Purple
+                3: NFT_DESIGNS[3], // Infinite Buffer (4.png) - Mythic - Red
+                4: NFT_DESIGNS[4]  // Web3 Liberation (5.png) - Legendary - Yellow
+            };
+            
+            const result = typeMapping[contractType] || NFT_DESIGNS[0];
+            console.log('Mapping result:', result);
+            return result;
+        }
+
         async function connectWallet() {
+            console.log('connectWallet function called');
             try {
                 if (typeof window.ethereum !== 'undefined') {
                     web3 = new Web3(window.ethereum);
                     
+                    // Request account access
                     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-                    userAccount = accounts[0];
+                    if (!accounts || accounts.length === 0) {
+                        showToast('No accounts found. Please unlock your wallet.', 'error');
+                        return;
+                    }
                     
+                    userAccount = accounts[0];
+                    console.log('Connected account:', userAccount);
+                    
+                    // Initialize contract
+                    try {
+                        contract = new web3.eth.Contract(CONTRACT_ABI, CONTRACT_ADDRESS);
+                        console.log('Contract initialized:', CONTRACT_ADDRESS);
+                        document.getElementById('contractStatus').textContent = 'Initialized';
+                    } catch (contractError) {
+                        console.error('Contract initialization error:', contractError);
+                        showToast('Contract initialization failed', 'error');
+                        document.getElementById('contractStatus').textContent = 'Failed';
+                        return;
+                    }
+                    
+                    // Check network
                     const chainId = await web3.eth.getChainId();
-                    if (chainId !== NETWORK_CONFIG.BSC_MAINNET && chainId !== NETWORK_CONFIG.BSC_TESTNET) {
-                        showToast('请切换到BSC网络', 'error');
+                    console.log('Current chain ID:', chainId);
+                    document.getElementById('networkStatus').textContent = `Chain ID: ${chainId}`;
+                    
+                    // Allow multiple networks for testing
+                    const supportedNetworks = [
+                        NETWORK_CONFIG.BSC_MAINNET,
+                        NETWORK_CONFIG.BSC_TESTNET,
+                        NETWORK_CONFIG.ETHEREUM_MAINNET,
+                        NETWORK_CONFIG.POLYGON_MAINNET
+                    ];
+                    
+                    if (!supportedNetworks.includes(chainId)) {
+                        showToast('Please switch to a supported network (BSC, Ethereum, or Polygon)', 'error');
                         await switchToBSC();
                         return;
                     }
                     
+                    // Update UI
                     const shortAddress = userAccount.slice(0, 6) + '...' + userAccount.slice(-4);
                     document.getElementById('connectWallet').innerHTML = `<span>✅</span><span>${shortAddress}</span>`;
                     document.getElementById('mintBtn').disabled = false;
+                    document.getElementById('accountStatus').textContent = shortAddress;
+                    
+                    // Update stats
+                    try {
+                        await updateMintStats();
+                    } catch (statsError) {
+                        console.error('Stats update error:', statsError);
+                        // Don't fail connection if stats fail
+                    }
                     
                     showToast('Wallet connected successfully!', 'success');
                     
                 } else {
-                    showToast('Please install MetaMask!', 'error');
+                    showToast('Please install MetaMask or another Web3 wallet!', 'error');
                     window.open('https://metamask.io/download/', '_blank');
                 }
             } catch (error) {
                 console.error('Connection error:', error);
-                showToast('Wallet connection failed', 'error');
+                if (error.code === 4001) {
+                    showToast('Connection rejected by user', 'error');
+                } else if (error.code === -32002) {
+                    showToast('Connection request already pending', 'error');
+                } else {
+                    showToast('Wallet connection failed: ' + error.message, 'error');
+                }
             }
         }
 
@@ -1439,20 +1691,71 @@
             try {
                 await window.ethereum.request({
                     method: 'wallet_switchEthereumChain',
-                    params: [{ chainId: '0x38' }],
+                    params: [{ chainId: '0x38' }], // BSC Mainnet
                 });
-            } catch (error) {
-                if (error.code === 4902) {
+            } catch (switchError) {
+                // If BSC is not added, add it
+                if (switchError.code === 4902) {
+                    try {
                     await window.ethereum.request({
                         method: 'wallet_addEthereumChain',
                         params: [{
                             chainId: '0x38',
                             chainName: 'Binance Smart Chain',
-                            nativeCurrency: { name: 'BNB', symbol: 'BNB', decimals: 18 },
+                                nativeCurrency: {
+                                    name: 'BNB',
+                                    symbol: 'BNB',
+                                    decimals: 18
+                                },
                             rpcUrls: ['https://bsc-dataseed.binance.org/'],
                             blockExplorerUrls: ['https://bscscan.com/']
                         }]
                     });
+                    } catch (addError) {
+                        console.error('Failed to add BSC network:', addError);
+                        showToast('Failed to add BSC network', 'error');
+                    }
+                } else {
+                    console.error('Failed to switch to BSC:', switchError);
+                    showToast('Failed to switch to BSC network', 'error');
+                }
+            }
+        }
+
+        async function updateMintStats() {
+            try {
+                if (!contract || !userAccount) {
+                    console.log('Contract or user account not available for stats update');
+                    return;
+                }
+                
+                console.log('Updating mint stats...');
+                const stats = await contract.methods.getMintStats().call();
+                console.log('Mint stats from contract:', stats);
+                
+                // Update UI with real contract data
+                document.getElementById('totalMinted').textContent = stats.currentSupply.toString();
+                document.getElementById('userNFTs').textContent = stats.userBalance.toString();
+                
+                // Update user NFT count
+                userNFTCount = parseInt(stats.userBalance);
+                
+                console.log('Stats updated:', {
+                    totalMinted: stats.currentSupply,
+                    userNFTs: stats.userBalance,
+                    maxSupply: stats.maxSupply,
+                    maxPerWallet: stats.maxPerWallet
+                });
+                
+            } catch (error) {
+                console.error('Error updating stats:', error);
+                // Fallback to basic total supply if getMintStats fails
+                try {
+                    const totalSupply = await contract.methods.totalSupply().call();
+                    document.getElementById('totalMinted').textContent = totalSupply.toString();
+                    console.log('Fallback total supply:', totalSupply);
+                } catch (fallbackError) {
+                    console.error('Fallback stats update failed:', fallbackError);
                 }
             }
         }
@@ -1481,30 +1784,104 @@
                 return;
             }
             
+            if (!contract) {
+                showToast('Contract not initialized', 'error');
+                return;
+            }
+            
             try {
                 const mintBtn = document.getElementById('mintBtn');
                 mintBtn.disabled = true;
                 mintBtn.innerHTML = '⏳ Minting...';
                 
-                showToast('Please sign the gasless transaction', 'info');
-                await new Promise(resolve => setTimeout(resolve, 2000));
+                showToast('Please confirm the transaction (0.001 BNB fee) in your wallet', 'info');
                 
-                showToast('Processing gasless minting...', 'info');
-                await new Promise(resolve => setTimeout(resolve, 2000));
+                // Call the contract mint function with 0.001 BNB fee
+                const tx = await contract.methods.mint().send({ 
+                    from: userAccount,
+                    value: web3.utils.toWei('0.001', 'ether') // 0.001 BNB fee
+                });
                 
-                userNFTCount++;
-                document.getElementById('userNFTs').textContent = userNFTCount;
+                showToast('Transaction submitted! Waiting for confirmation...', 'info');
                 
-                // Show celebration modal
-                showCelebrationModal();
+                // Wait for transaction confirmation
+                const receipt = await web3.eth.getTransactionReceipt(tx.transactionHash);
                 
+                if (receipt.status) {
+                    // Get the minted token ID from the event
+                    const mintEvent = receipt.logs.find(log => {
+                        try {
+                            const decoded = web3.eth.abi.decodeLog(
+                                CONTRACT_ABI.find(abi => abi.name === 'NFTMinted').inputs,
+                                log.data,
+                                log.topics.slice(1)
+                            );
+                            return decoded.to.toLowerCase() === userAccount.toLowerCase();
+                        } catch (e) {
+                            return false;
+                        }
+                    });
+                    
+                    if (mintEvent) {
+                        const decoded = web3.eth.abi.decodeLog(
+                            CONTRACT_ABI.find(abi => abi.name === 'NFTMinted').inputs,
+                            mintEvent.data,
+                            mintEvent.topics.slice(1)
+                        );
+                        
+                        const tokenId = decoded.tokenId;
+                        const nftType = decoded.nftType;
+                        
+                        console.log('Minted NFT:', { tokenId, nftType });
+                        
+                        // Get real NFT details from contract
+                        try {
+                            const tokenDetails = await contract.methods.getTokenDetails(tokenId).call();
+                            console.log('Token details:', tokenDetails);
+                            console.log('Contract nftType:', tokenDetails.nftType, 'Type:', typeof tokenDetails.nftType);
+                            
+                            // Convert to number if it's a string
+                            const nftTypeNumber = parseInt(tokenDetails.nftType);
+                            console.log('Parsed nftType:', nftTypeNumber);
+                            
+                            // Map contract NFT type to our design
+                            const mintedDesign = getDesignByContractType(nftTypeNumber);
+                            console.log('Mapped design:', mintedDesign);
+                            
+                            // Update stats
+                            await updateMintStats();
+                            
+                            // Show celebration modal with real NFT data
+                            showCelebrationModal(tokenId, mintedDesign, tokenDetails);
+                            
+                            showToast(`NFT #${tokenId} minted successfully! 🎉`, 'success');
+                            
+                            // Shuffle for next mint
                 setTimeout(shuffleNFT, 1000);
+                            
+                        } catch (detailError) {
+                            console.error('Error getting token details:', detailError);
+                            // Fallback to current design
+                            await updateMintStats();
+                            showCelebrationModal(tokenId, currentDesign);
+                            showToast(`NFT #${tokenId} minted successfully! 🎉`, 'success');
+                            setTimeout(shuffleNFT, 1000);
+                        }
+                    }
+                } else {
+                    showToast('Transaction failed', 'error');
+                }
                 
             } catch (error) {
-                showToast('Minting failed', 'error');
+                console.error('Minting error:', error);
+                if (error.code === 4001) {
+                    showToast('Transaction rejected by user', 'error');
+                } else {
+                    showToast('Minting failed: ' + error.message, 'error');
+                }
             } finally {
                 document.getElementById('mintBtn').disabled = false;
-                document.getElementById('mintBtn').innerHTML = '⚡ GASLESS MINT - FREE';
+                document.getElementById('mintBtn').innerHTML = '⚡ MINT NFT - 0.001 BNB';
             }
         }
 
@@ -1521,14 +1898,24 @@
             setTimeout(() => toast.classList.remove('show'), 3000);
         }
 
-        function showCelebrationModal() {
+        function showCelebrationModal(tokenId = null, design = null, tokenDetails = null) {
             const modal = document.getElementById('celebrationModal');
             const modalImage = document.getElementById('modalNFTImage');
             
-            // Set the NFT image
-            if (currentDesign) {
-                modalImage.src = currentDesign.image;
-                modalImage.alt = currentDesign.name;
+            // Use provided design or fallback to current design
+            const displayDesign = design || currentDesign;
+            
+            if (displayDesign) {
+                modalImage.src = displayDesign.image;
+                modalImage.alt = displayDesign.name;
+            }
+            
+            // Update modal content with real NFT data
+            if (tokenId) {
+                const modalTitle = document.querySelector('#celebrationModal h2');
+                if (modalTitle) {
+                    modalTitle.textContent = `🎉 NFT #${tokenId} Minted Successfully!`;
+                }
             }
             
             // Create confetti
@@ -1552,8 +1939,8 @@
             confettiElements.forEach(el => el.remove());
         }
 
-        function viewOnOpenSea() {
-            window.open('https://opensea.io/collection/x413', '_blank');
+        function viewOnElement() {
+            window.open('https://element.market/collections/x413-3?search[toggles][0]=ALL', '_blank');
         }
 
         function createConfetti() {
