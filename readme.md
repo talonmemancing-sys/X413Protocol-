@@ -1,20 +1,20 @@
-# X413 Protocol
+# BX413 Protocol
 
 <div align="center">
 
-![X413 Banner](https://raw.githubusercontent.com/talonmemancing-sys/X413Protocol-/main/3.png)
+![BX413 Banner](https://raw.githubusercontent.com/talonmemancing-sys/BX413Protocol-/main/3.png)
 
 ### 🚀 突破Web2限制，重新定义去中心化协议
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Solidity](https://img.shields.io/badge/Solidity-^0.8.0-blue)](https://soliditylang.org/)
 [![BSC](https://img.shields.io/badge/BSC-Mainnet-green)](https://bscscan.com/)
-[![Twitter](https://img.shields.io/twitter/follow/BEP20X413?style=social)](https://twitter.com/BEP20X413)
+[![Twitter](https://img.shields.io/twitter/follow/BEP20BX413?style=social)](https://twitter.com/BEP20BX413)
 
-**[🌐 官网](https://x413img.art)** · 
+**[🌐 官网](https://X413img.art)** · 
 **[🐦 Twitter](https://twitter.com/BEP20X413)** · 
 **[💻 GitHub](https://github.com/talonmemancing-sys/X413Protocol-)** · 
-**[🖼️ NFT Collection](https://element.market/collections/x413)**
+**[🖼️ NFT Collection](https://element.market/collections/X413)**
 
 </div>
 
@@ -64,7 +64,7 @@
 
 <div align="center">
 
-### X413 Protocol 是什么？
+### BX413 Protocol 是什么？
 
 基于 **X402 协议** 的革命性扩展升级  
 灵感源自 **HTTP 413** 错误代码（Payload Too Large）  
@@ -98,13 +98,13 @@
 
 ```
 💰 Mint 价格: 0.001 BNB
-🎁 质押奖励: 300M X413 (30%)
-💧 流动性池: 200M X413 (20%)
-🔥 FOUR抢购: 500M X413 (50%)
+🎁 质押奖励: 300M BX413 (30%)
+💧 流动性池: 200M BX413 (20%)
+🔥 FOUR抢购: 500M BX413 (50%)
 ⏱️ 挖矿周期: 100天
-📅 每日产出: 3M X413
+📅 每日产出: 3M BX413
 🔐 最小质押: 24小时
-🎯 总供应量: 1B X413
+🎯 总供应量: 1B BX413
 ```
 
 </td>
@@ -124,7 +124,7 @@
 在 Web2 世界中，**413 错误** 代表"请求实体过大"  
 这是中心化服务器架构的固有限制
 
-### X413 的突破
+### BX413 的突破
 
 </div>
 
@@ -177,7 +177,7 @@ DAO 驱动决策
 <tr>
 <th width="30%">功能特性</th>
 <th width="20%">X402</th>
-<th width="20%">X413</th>
+<th width="20%">BX413</th>
 <th width="30%">升级说明</th>
 </tr>
 <tr>
@@ -265,7 +265,7 @@ graph TB
 | 步骤 | 动作 | 结果 |
 |:---:|:---|:---|
 | **1️⃣** | 用户 Mint NFT | 支付 0.001 BNB → 财库 |
-| **2️⃣** | 质押 NFT 挖矿 | 获得 X413 代币 → 市场流通 |
+| **2️⃣** | 质押 NFT 挖矿 | 获得 BX413 代币 → 市场流通 |
 | **3️⃣** | FOUR 内盘抢购 | 用户直接抢购 50% 代币 |
 | **4️⃣** | 添加 V3 流动性 | 赚取交易手续费 → 回购池 |
 | **5️⃣** | 手续费回购 NFT | 销毁/再分配 → 提升稀缺性 |
@@ -285,42 +285,42 @@ graph TB
 
 ### 1️⃣ Mint NFT
 
-![Genesis Breaker](https://raw.githubusercontent.com/talonmemancing-sys/X413Protocol-/main/1.png)
+![Genesis Breaker](https://raw.githubusercontent.com/talonmemancing-sys/BX413Protocol-/main/1.png)
 
 **访问官网**  
 连接钱包  
 支付 0.001 BNB  
 获得随机稀有度 NFT
 
-[🚀 立即 Mint](https://x413img.art)
+[🚀 立即 Mint](https://BX413img.art)
 
 </td>
 <td width="33%" align="center">
 
 ### 2️⃣ 质押挖矿
 
-![Cyber Overflow](https://raw.githubusercontent.com/talonmemancing-sys/X413Protocol-/main/2.png)
+![Cyber Overflow](https://raw.githubusercontent.com/talonmemancing-sys/BX413Protocol-/main/2.png)
 
 **质押 NFT**  
 自动开始挖矿  
-每日领取 X413  
+每日领取 BX413  
 最少质押 24 小时
 
-[💎 开始质押](https://x413img.art)
+[💎 开始质押](https://BX413img.art)
 
 </td>
 <td width="33%" align="center">
 
 ### 3️⃣ FOUR 抢购
 
-![Payload Phoenix](https://raw.githubusercontent.com/talonmemancing-sys/X413Protocol-/main/3.png)
+![Payload Phoenix](https://raw.githubusercontent.com/talonmemancing-sys/BX413Protocol-/main/3.png)
 
 **FOUR 内盘**  
 直接抢购代币  
 50% 供应量  
 公平分配机制
 
-[🔥 参与抢购](https://x413img.art)
+[🔥 参与抢购](https://BX413img.art)
 
 </td>
 </tr>
@@ -336,7 +336,7 @@ graph TB
 
 ### 5 种稀有度 · 差异化算力 · 高收益潜力
 
-[**🖼️ 在 Element Market 查看完整系列**](https://element.market/collections/x413)
+[**🖼️ 在 Element Market 查看完整系列**](https://element.market/collections/BX413)
 
 </div>
 
@@ -350,44 +350,44 @@ graph TB
 <th width="31%">预估日收益*</th>
 </tr>
 <tr>
-<td align="center"><img src="https://raw.githubusercontent.com/talonmemancing-sys/X413Protocol-/main/1.png" width="60"/></td>
+<td align="center"><img src="https://raw.githubusercontent.com/talonmemancing-sys/BX413Protocol-/main/1.png" width="60"/></td>
 <td align="center"><b>🟢 Rare</b></td>
 <td><b>Genesis Breaker</b><br/><i>创世破界者</i></td>
 <td align="center"><b>40%</b></td>
 <td align="center"><b>10</b></td>
-<td align="center">~397 X413<br/><small>(≈ 0.004 BNB)</small></td>
+<td align="center">~397 BX413<br/><small>(≈ 0.004 BNB)</small></td>
 </tr>
 <tr>
-<td align="center"><img src="https://raw.githubusercontent.com/talonmemancing-sys/X413Protocol-/main/2.png" width="60"/></td>
+<td align="center"><img src="https://raw.githubusercontent.com/talonmemancing-sys/BX413Protocol-/main/2.png" width="60"/></td>
 <td align="center"><b>🔵 Ultra Rare</b></td>
 <td><b>Cyber Overflow</b><br/><i>赛博溢出</i></td>
 <td align="center"><b>25%</b></td>
 <td align="center"><b>25</b></td>
-<td align="center">~993 X413<br/><small>(≈ 0.010 BNB)</small></td>
+<td align="center">~993 BX413<br/><small>(≈ 0.010 BNB)</small></td>
 </tr>
 <tr>
-<td align="center"><img src="https://raw.githubusercontent.com/talonmemancing-sys/X413Protocol-/main/3.png" width="60"/></td>
+<td align="center"><img src="https://raw.githubusercontent.com/talonmemancing-sys/BX413Protocol-/main/3.png" width="60"/></td>
 <td align="center"><b>🟣 Epic</b></td>
 <td><b>Payload Phoenix</b><br/><i>载荷凤凰</i></td>
 <td align="center"><b>20%</b></td>
 <td align="center"><b>60</b></td>
-<td align="center">~2,384 X413<br/><small>(≈ 0.024 BNB)</small></td>
+<td align="center">~2,384 BX413<br/><small>(≈ 0.024 BNB)</small></td>
 </tr>
 <tr>
-<td align="center"><img src="https://raw.githubusercontent.com/talonmemancing-sys/X413Protocol-/main/4.png" width="60"/></td>
+<td align="center"><img src="https://raw.githubusercontent.com/talonmemancing-sys/BX413Protocol-/main/4.png" width="60"/></td>
 <td align="center"><b>🔴 Mythic</b></td>
 <td><b>Infinite Buffer</b><br/><i>无限缓冲</i></td>
 <td align="center"><b>10%</b></td>
 <td align="center"><b>150</b></td>
-<td align="center">~5,960 X413<br/><small>(≈ 0.060 BNB)</small></td>
+<td align="center">~5,960 BX413<br/><small>(≈ 0.060 BNB)</small></td>
 </tr>
 <tr>
-<td align="center"><img src="https://raw.githubusercontent.com/talonmemancing-sys/X413Protocol-/main/5.png" width="60"/></td>
+<td align="center"><img src="https://raw.githubusercontent.com/talonmemancing-sys/BX413Protocol-/main/5.png" width="60"/></td>
 <td align="center"><b>⚡ Legendary</b></td>
 <td><b>Web3 Liberation</b><br/><i>Web3解放</i></td>
 <td align="center"><b>5%</b></td>
 <td align="center"><b>400</b></td>
-<td align="center">~15,894 X413<br/><small>(≈ 0.159 BNB)</small></td>
+<td align="center">~15,894 BX413<br/><small>(≈ 0.159 BNB)</small></td>
 </tr>
 </table>
 
@@ -398,7 +398,7 @@ _*基于全网算力 75,500 的估算，实际收益随参与度动态变化_
 **收益计算公式**
 
 ```
-用户日收益 = (用户总算力 / 全网总算力) × 3,000,000 X413
+用户日收益 = (用户总算力 / 全网总算力) × 3,000,000 BX413
 ```
 
 </div>
@@ -413,7 +413,7 @@ _*基于全网算力 75,500 的估算，实际收益随参与度动态变化_
 
 <div align="center">
 
-**总供应量: 1,000,000,000 X413**
+**总供应量: 1,000,000,000 BX413**
 
 </div>
 
@@ -469,7 +469,7 @@ _*基于全网算力 75,500 的估算，实际收益随参与度动态变化_
 #### 💰
 **抢购总量**  
 500,000,000  
-X413 代币  
+BX413 代币  
 **(50%)**
 
 </td>
@@ -511,7 +511,7 @@ TGE 时开启
 #### 💎
 **总奖励池**  
 300,000,000  
-X413 代币  
+BX413 代币  
 **(30%)**
 
 </td>
@@ -528,7 +528,7 @@ X413 代币
 #### 📅
 **每日产出**  
 3,000,000  
-X413 代币
+BX413 代币
 
 </td>
 <td width="25%" align="center">
@@ -563,37 +563,37 @@ X413 代币
 <tr>
 <td>1个 Rare</td>
 <td align="center">10</td>
-<td align="right">397 X413</td>
-<td align="right">11,920 X413</td>
-<td align="right">39,735 X413</td>
+<td align="right">397 BX413</td>
+<td align="right">11,920 BX413</td>
+<td align="right">39,735 BX413</td>
 </tr>
 <tr>
 <td>1个 Ultra Rare</td>
 <td align="center">25</td>
-<td align="right">993 X413</td>
-<td align="right">29,801 X413</td>
-<td align="right">99,338 X413</td>
+<td align="right">993 BX413</td>
+<td align="right">29,801 BX413</td>
+<td align="right">99,338 BX413</td>
 </tr>
 <tr>
 <td>1个 Epic</td>
 <td align="center">60</td>
-<td align="right">2,384 X413</td>
-<td align="right">71,523 X413</td>
-<td align="right">238,411 X413</td>
+<td align="right">2,384 BX413</td>
+<td align="right">71,523 BX413</td>
+<td align="right">238,411 BX413</td>
 </tr>
 <tr>
 <td>1个 Mythic</td>
 <td align="center">150</td>
-<td align="right">5,960 X413</td>
-<td align="right">178,808 X413</td>
-<td align="right">596,026 X413</td>
+<td align="right">5,960 BX413</td>
+<td align="right">178,808 BX413</td>
+<td align="right">596,026 BX413</td>
 </tr>
 <tr>
 <td><b>1个 Legendary</b></td>
 <td align="center"><b>400</b></td>
-<td align="right"><b>15,894 X413</b></td>
-<td align="right"><b>476,821 X413</b></td>
-<td align="right"><b>1,589,404 X413</b></td>
+<td align="right"><b>15,894 BX413</b></td>
+<td align="right"><b>476,821 BX413</b></td>
+<td align="right"><b>1,589,404 BX413</b></td>
 </tr>
 </table>
 
@@ -615,7 +615,7 @@ _*以上为理想估算，实际收益会根据全网算力变化而调整_
 
 ### 🎨 NFT 合约
 
-**X413.sol**
+**BX413.sol**
 
 ✅ ERC721 标准  
 ✅ 5种稀有度设计  
@@ -629,7 +629,7 @@ _*以上为理想估算，实际收益会根据全网算力变化而调整_
 
 ### 💎 质押合约
 
-**X413Staking.sol**
+**BX413Staking.sol**
 
 ✅ NFT 质押挖矿  
 ✅ 防闪电贷保护  
@@ -643,7 +643,7 @@ _*以上为理想估算，实际收益会根据全网算力变化而调整_
 
 ### 🪙 代币合约
 
-**X413Token.sol**
+**BX413Token.sol**
 
 ✅ ERC20 标准  
 ✅ FOUR 内盘集成  
@@ -794,14 +794,14 @@ _*以上为理想估算，实际收益会根据全网算力变化而调整_
 
 **取决于你的算力占比:**
 
-全网每天产出 **3,000,000 X413**
+全网每天产出 **3,000,000 BX413**
 
 你的日收益 = (你的算力 / 全网算力) × 3,000,000
 
 例如：
 - 质押 1 个 Legendary (400算力)
 - 全网算力 75,500
-- 你的日收益 ≈ **15,894 X413**
+- 你的日收益 ≈ **15,894 BX413**
 
 </details>
 
@@ -810,7 +810,7 @@ _*以上为理想估算，实际收益会根据全网算力变化而调整_
 
 <br>
 
-**X413 代币的用途:**
+**BX413 代币的用途:**
 1. 💱 **交易**: 在 DEX 上交易获利
 2. 🌊 **流动性**: 添加流动性赚取手续费
 3. 🗳️ **治理**: 参与 DAO 投票决策
@@ -844,7 +844,7 @@ _*以上为理想估算，实际收益会根据全网算力变化而调整_
 - ✅ 第三方审计进行中
 - ✅ Bug 赏金计划即将推出
 
-代码完全开源，可在 [GitHub](https://github.com/talonmemancing-sys/X413Protocol-) 查看审计。
+代码完全开源，可在 [GitHub](https://github.com/talonmemancing-sys/BX413Protocol-) 查看审计。
 
 </details>
 
@@ -858,10 +858,10 @@ _*以上为理想估算，实际收益会根据全网算力变化而调整_
 
 ### 核心平台
 
-[![Website](https://img.shields.io/badge/🌐_官网-x413img.art-blue?style=for-the-badge)](https://x413img.art)
-[![Twitter](https://img.shields.io/badge/🐦_Twitter-@BEP20X413-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/BEP20X413)
-[![GitHub](https://img.shields.io/badge/💻_GitHub-X413Protocol-181717?style=for-the-badge&logo=github)](https://github.com/talonmemancing-sys/X413Protocol-)
-[![Element](https://img.shields.io/badge/🖼️_Element_Market-X413_Collection-7B3FE4?style=for-the-badge)](https://element.market/collections/x413)
+[![Website](https://img.shields.io/badge/🌐_官网-BX413img.art-blue?style=for-the-badge)](https://BX413img.art)
+[![Twitter](https://img.shields.io/badge/🐦_Twitter-@BEP20BX413-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/BEP20BX413)
+[![GitHub](https://img.shields.io/badge/💻_GitHub-BX413Protocol-181717?style=for-the-badge&logo=github)](https://github.com/talonmemancing-sys/BX413Protocol-)
+[![Element](https://img.shields.io/badge/🖼️_Element_Market-BX413_Collection-7B3FE4?style=for-the-badge)](https://element.market/collections/BX413)
 
 <br>
 
@@ -875,9 +875,9 @@ _*以上为理想估算，实际收益会根据全网算力变化而调整_
 
 ### 联系方式
 
-📧 **Email**: contact@x413.io  
-💼 **Business**: bd@x413.io  
-🛠️ **Tech**: dev@x413.io
+📧 **Email**: contact@BX413.io  
+💼 **Business**: bd@BX413.io  
+🛠️ **Tech**: dev@BX413.io
 
 </div>
 
@@ -932,7 +932,7 @@ _*以上为理想估算，实际收益会根据全网算力变化而调整_
 
 </div>
 
-X413 Protocol 是一个实验性去中心化协议。请注意：
+BX413 Protocol 是一个实验性去中心化协议。请注意：
 
 - 🎲 **投资风险**: 加密货币投资存在高风险，NFT 价格可能大幅波动
 - 💻 **技术风险**: 智能合约可能存在未知漏洞，区块链网络可能出现问题
@@ -990,17 +990,17 @@ NFT 交易市场
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/talonmemancing-sys/X413Protocol-/main/3.png" width="300"/>
+<img src="https://raw.githubusercontent.com/talonmemancing-sys/BX413Protocol-/main/3.png" width="300"/>
 
-## 🚀 加入 X413，一起突破 Web2 限制！
+## 🚀 加入 BX413，一起突破 Web2 限制！
 
 ### Breaking Limits. Building Future.
 
 <br>
 
-[![Twitter](https://img.shields.io/twitter/follow/BEP20X413?style=social&logo=twitter)](https://twitter.com/BEP20X413)
-[![GitHub](https://img.shields.io/github/stars/talonmemancing-sys/X413Protocol-?style=social)](https://github.com/talonmemancing-sys/X413Protocol-)
-[![Website](https://img.shields.io/badge/🌐-Visit_Website-blue)](https://x413img.art)
+[![Twitter](https://img.shields.io/twitter/follow/BEP20BX413?style=social&logo=twitter)](https://twitter.com/BEP20BX413)
+[![GitHub](https://img.shields.io/github/stars/talonmemancing-sys/BX413Protocol-?style=social)](https://github.com/talonmemancing-sys/BX413Protocol-)
+[![Website](https://img.shields.io/badge/🌐-Visit_Website-blue)](https://BX413img.art)
 
 <br>
 
@@ -1008,12 +1008,12 @@ NFT 交易市场
 
 <br>
 
-**© 2025 X413 Protocol. All Rights Reserved.**
+**© 2025 BX413 Protocol. All Rights Reserved.**
 
-Made with ❤️ by the X413 Team
+Made with ❤️ by the BX413 Team
 
 <br>
 
-**[⬆ 回到顶部](#x413-protocol)**
+**[⬆ 回到顶部](#BX413-protocol)**
 
 </div>
