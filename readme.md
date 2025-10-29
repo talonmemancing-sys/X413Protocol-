@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![BX413 Banner](https://raw.githubusercontent.com/talonmemancing-sys/BX413Protocol-/main/3.png)
+![X413](https://raw.githubusercontent.com/talonmemancing-sys/BX413Protocol-/main/3.png)
 
 ### 🚀 突破Web2限制，重新定义去中心化协议
 
